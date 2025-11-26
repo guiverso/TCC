@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Platinum - Fórum</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <style>
+    body {
+      background-color: #0d0d0f;
+      color: #e0e0ff;
+    }
+    .navbar {
+      background-color: #1a1a22 !important;
+    }
+    .brand {
+      font-size: 1.6rem;
+      font-weight: bold;
+      color: #b48cff !important;
+    }
+    .forum-header {
+      max-width: 900px;
+      margin: 30px auto;
+      padding: 20px;
+      background-color: #1a1a22;
+      border: 1px solid #2e2e3d;
+      border-radius: 12px;
+    }
+    .forum-title {
+      font-size: 2rem;
+      font-weight: 600;
+      color: #c7a4ff;
+    }
+    .forum-desc {
+      color: #bdbde6;
+      font-size: 1rem;
+    }
+    .feed-container {
+      max-width: 900px;
+      margin: 20px auto;
+    }
+    .post-card {
+      background-color: #1a1a22;
+      border: 1px solid #2e2e3d;
+      padding: 20px;
+      border-radius: 12px;
+      margin-bottom: 25px;
+    }
+    .post-title {
+      color: #c7a4ff;
+      font-size: 1.4rem;
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
+    .post-user {
+      color: #9e9ebe;
+      font-size: 0.9rem;
+      margin-bottom: 15px;
+    }
+    .post-content {
+      color: #d6d6f2;
+      margin-bottom: 15px;
+    }
+    .btn-like {
+      background-color: #6b4bd6;
+      border: none;
+      padding: 6px 14px;
+      border-radius: 8px;
+    }
+    /* Botão flutuante para criar post */
+    .floating-btn {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #6b4bd6;
+      border: none;
+      padding: 15px 22px;
+      border-radius: 50px;
+      font-weight: bold;
+      color: #fff;
+      box-shadow: 0 0 12px rgba(0,0,0,0.4);
+      transition: 0.2s;
+    }
+    .floating-btn:hover {
+      transform: scale(1.05);
+      opacity: 0.9;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar mantida exatamente igual -->
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand brand" href="#">Platinum</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <form class="d-flex me-auto ms-3" role="search" style="max-width:300px;">
+          <input class="form-control" type="search" placeholder="Buscar posts..."
+            style="background-color:#111118; border-color:#2e2e3d; color:#e0e0ff;">
+        </form>
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#">Início</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Perfil</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Sair</a></li>
+        </ul>
+        <button class="btn btn-primary ms-3" data-bs-toggle="modal" data-bs-target="#criarForumModal"
+          style="background-color:#6b4bd6; border:none;">Criar Fórum</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Cabeçalho do Fórum -->
+  <div class="forum-header">
+    <div class="forum-title">Programação</div>
+    <div class="forum-desc">Discussões, dúvidas, dicas e tutoriais sobre programação para iniciantes e experientes.</div>
+  </div>
+
+  <!-- Posts do Fórum -->
+  <div class="feed-container">
+
+    <div class="post-card">
+      <div class="post-title">Qual linguagem devo aprender primeiro?</div>
+      <div class="post-user">Postado por <strong>Lucas</strong> • ontem</div>
+      <div class="post-content">Estou começando agora e não sei se começo por Python, JavaScript ou C#. Qual vocês recomendam?</div>
+      <button class="btn btn-like text-light">Curtir</button>
+    </div>
+
+    <div class="post-card">
+      <div class="post-title">Compartilhando meu primeiro projeto!</div>
+      <div class="post-user">Postado por <strong>Ana</strong> • 3 horas atrás</div>
+      <div class="post-content">Fiz um gerador de senhas em Python! Simples, mas foi um grande passo pra mim 😄</div>
+      <button class="btn btn-like text-light">Curtir</button>
+    </div>
+
+  </div>
+
+  <!-- Botão Flutuante Criar Post -->
+  <button class="floating-btn" data-bs-toggle="modal" data-bs-target="#criarPostModal">+ Criar Post</button>
+
+
+  <!-- Modal Criar Post -->
+  <div class="modal fade" id="criarPostModal" tabindex="-1">
+    <div class="modal-dialog">
+      <div class="modal-content" style="background-color:#1a1a22; color:#e0e0ff; border:1px solid #2e2e3d;">
+        <div class="modal-header">
+          <h5 class="modal-title">Criar Novo Post</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <div class="mb-3">
+            <label class="form-label">Título</label>
+            <input type="text" class="form-control"
+              style="background-color:#111118; border-color:#2e2e3d; color:#e0e0ff;">
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Conteúdo</label>
+            <textarea class="form-control" rows="4"
+              style="background-color:#111118; border-color:#2e2e3d; color:#e0e0ff;"></textarea>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+          <button class="btn btn-primary" style="background-color:#6b4bd6; border:none;">Postar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal Criar Fórum (mantida para consistência) -->
+  <div class="modal fade" id="criarForumModal" tabindex="-1">
+    <div class="modal-dialog">
+      <div class="modal-content" style="background-color:#1a1a22; color:#e0e0ff; border:1px solid #2e2e3d;">
+        <div class="modal-header">
+          <h5 class="modal-title">Criar Novo Fórum</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <div class="mb-3">
+            <label class="form-label">Título do Fórum</label>
+            <input type="text" class="form-control"
+              style="background-color:#111118; border-color:#2e2e3d; color:#e0e0ff;">
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Descrição</label>
+            <textarea class="form-control" rows="3"
+              style="background-color:#111118; border-color:#2e2e3d; color:#e0e0ff;"></textarea>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-secondary" data-bs-dismiss="
+
+</body>
+</html>

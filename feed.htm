@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Platinum - Feed</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <style>
+    body {
+      background-color: #0d0d0f;
+      color: #e0e0ff;
+    }
+    .navbar {
+      background-color: #1a1a22 !important;
+    }
+    .brand {
+      font-size: 1.6rem;
+      font-weight: bold;
+      color: #b48cff !important;
+    }
+    .feed-container {
+      max-width: 800px;
+      margin: 40px auto;
+    }
+    .post-card {
+      background-color: #1a1a22;
+      border: 1px solid #2e2e3d;
+      padding: 20px;
+      border-radius: 12px;
+      margin-bottom: 25px;
+    }
+    .post-title {
+      color: #c7a4ff;
+      font-size: 1.5rem;
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
+    .post-user {
+      color: #9e9ebe;
+      font-size: 0.9rem;
+      margin-bottom: 15px;
+    }
+    .post-content {
+      color: #d6d6f2;
+      margin-bottom: 15px;
+    }
+    .btn-like {
+      background-color: #6b4bd6;
+      border: none;
+      padding: 6px 14px;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand brand" href="#">Platinum</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <form class="d-flex me-auto ms-3" role="search" style="max-width:300px;">
+          <input class="form-control" type="search" placeholder="Buscar posts..." style="background-color:#111118; border-color:#2e2e3d; color:#e0e0ff;">
+        </form>
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#">Início</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Perfil</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Sair</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="feed-container">
+
+    <!-- Column Left: Feed -->
+      <div class="flex-grow-1">
+
+      <!-- Column Left: Feed -->
+      <div class="flex-grow-1">
+
+    <!-- Exemplo de Post -->
+    <div class="post-card">
+      <div class="post-title">Como eu aprendi programação em 6 meses</div>
+      <div class="post-user">Postado por <strong>Guilherme</strong> • 2 horas atrás</div>
+      <div class="post-content">
+        Comecei estudando lógica de programação com Python e depois fui para JavaScript. 
+        Montei pequenos projetos, participei de comunidades online e hoje estou iniciando no desenvolvimento web. 
+        Meu conselho: pratique todos os dias, mesmo que pouco.
+      </div>
+      <button class="btn btn-like text-light">Curtir</button>
+          </div>
+
+      
+
+    </div>
+
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Modal Criar Fórum -->
+  <div class="modal fade" id="criarForumModal" tabindex="-1">
+    <div class="modal-dialog">
+      <div class="modal-content" style="background-color:#1a1a22; color:#e0e0ff; border:1px solid #2e2e3d;">
+        <div class="modal-header">
+          <h5 class="modal-title">Criar Novo Fórum</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <div class="mb-3">
+            <label class="form-label">Título do Fórum</label>
+            <input type="text" class="form-control" style="background-color:#111118; border-color:#2e2e3d; color:#e0e0ff;">
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Descrição</label>
+            <textarea class="form-control" rows="3" style="background-color:#111118; border-color:#2e2e3d; color:#e0e0ff;"></textarea>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+          <button class="btn btn-primary" style="background-color:#6b4bd6; border:none;">Criar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
+
