@@ -1,0 +1,22 @@
+.post-card {
+    background-color: #1a1a22;
+    border: 1px solid #2e2e3d;
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 25px;
+  }
+  .post-title {
+    color: #c7a4ff;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  .post-user {
+    color: #9e9ebe;
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+  }
+  .post-content {
+    color: #d6d6f2;
+    margin-bottom: 15px;
+  }

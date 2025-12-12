@@ -4,7 +4,7 @@ const path = require("path");
 const auth = express.Router();
 
 auth.get('/',(req,res)=>{
-    let index = path.join(__dirname,'../public/views/auth/index.html');
+    let index = path.join(__dirname,'../public/views/login.html');
     res.status(400).sendFile(index);
 });
 

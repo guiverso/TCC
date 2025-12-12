@@ -1,0 +1,71 @@
+body {
+    background-color: #0d0d0f;
+    color: #e0e0ff;
+  }
+  .navbar {
+    background-color: #1a1a22 !important;
+  }
+  .brand {
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #b48cff !important;
+  }
+  .feed-container {
+    max-width: 800px;
+    margin: 40px auto;
+  }
+  
+  .btn-like {
+    background-color: #6b4bd6;
+    border: none;
+    padding: 6px 14px;
+    border-radius: 8px;
+  }
+
+  /* Botão flutuante para criar post */
+  .floating-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #6b4bd6;
+    border: none;
+    padding: 15px 22px;
+    border-radius: 50px;
+    font-weight: bold;
+    color: #fff;
+    box-shadow: 0 0 12px rgba(0,0,0,0.4);
+    transition: 0.2s;
+  }
+  .floating-btn:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
+  }
+  
+  .hero {
+    padding: 80px 20px;
+    background: linear-gradient(135deg, #1a1a22, #111118);
+    text-align: center;
+    border-bottom: 1px solid #2e2e3d;
+  }
+  .hero h1 {
+    font-size: 3rem;
+    color: #c7a4ff;
+  }
+  .hero p {
+    color: #cfcfe8;
+    margin-top: 15px;
+  }
+  .card {
+    background-color: #1a1a22;
+    border: 1px solid #2e2e3d;
+  }
+  .card-title {
+    color: #b48cff;
+  }
+  .footer {
+    padding: 20px;
+    text-align: center;
+    margin-top: 50px;
+    border-top: 1px solid #2e2e3d;
+    color: #8f8fa8;
+  }

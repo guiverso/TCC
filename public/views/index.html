@@ -1,31 +1,68 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <title>Platinum - Home</title>
-  </head>
-  <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary bg-dark" data-bs-theme="dark">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">Platinum</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="/auth">Log-in</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" href="/auth/register">Register</a>
-            </li>
-          </ul>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Platinum - Fórum de Aprendizado</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="../styles/style.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand brand" href="#">Platinum</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#">Início</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Categorias</a></li>
+          <li class="nav-item"><a class="nav-link" href="/auth">Entrar</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Registrar</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section class="hero">
+    <h1>Bem-vindo ao Platinum</h1>
+    <p>O fórum brasileiro de aprendizado onde conhecimento e criatividade se encontram.</p>
+    <a href="#" class="btn btn-primary mt-3" style="background-color:#6b4bd6; border:none;">Explorar tópicos</a>
+  </section>
+
+  <div class="container mt-5">
+    <div class="row g-4">
+
+      <div class="col-md-4">
+        <div class="card p-3 h-100">
+          <h5 class="card-title">Programação</h5>
+          <p>Aprofunde-se em linguagens, frameworks e projetos da comunidade.</p>
+          <a href="#" class="btn btn-outline-light">Ver mais</a>
         </div>
       </div>
-    </nav>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-  </body>
+      <div class="col-md-4">
+        <div class="card p-3 h-100">
+          <h5 class="card-title">Ciência & Estudos</h5>
+          <p>Discussões sobre matemática, física, biologia, história e muito mais.</p>
+          <a href="#" class="btn btn-outline-light">Ver mais</a>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card p-3 h-100">
+          <h5 class="card-title">Arte & Criatividade</h5>
+          <p>Poste desenhos, músicas, histórias e inspire outros usuários.</p>
+          <a href="#" class="btn btn-outline-light">Ver mais</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="footer mt-5">© 2025 Platinum - Comunidade de Aprendizado</div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
 </html>

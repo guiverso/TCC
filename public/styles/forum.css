@@ -1,0 +1,21 @@
+.forum-header {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #1a1a22;
+    border: 1px solid #2e2e3d;
+    border-radius: 12px;
+  }
+  .forum-title {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #c7a4ff;
+  }
+  .forum-desc {
+    color: #bdbde6;
+    font-size: 1rem;
+  }
+  .feed-container {
+    max-width: 900px;
+    margin: 20px auto;
+  }
